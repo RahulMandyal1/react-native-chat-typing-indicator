@@ -57,6 +57,42 @@ export default function App() {
       <Text style={styles.title}>react-native-chat-typing-indicator</Text>
       <Text style={styles.subtitle}>Animation Presets</Text>
 
+      <Section title="Showcase">
+        <View style={styles.showcaseGrid}>
+          <View style={styles.showcaseRow}>
+            <View style={styles.showcaseItem}>
+              <Text style={styles.showcaseLabel}>Wave</Text>
+              <View style={[styles.bubble, styles.largeBubble]}>
+                <TypingIndicator animationPreset="wave" dotRadius={8} dotMargin={8} dotAmplitude={5} />
+              </View>
+            </View>
+            
+            <View style={styles.showcaseItem}>
+              <Text style={styles.showcaseLabel}>Bounce</Text>
+              <View style={[styles.bubble, styles.largeBubble]}>
+                <TypingIndicator animationPreset="bounce" dotRadius={8} dotMargin={8} dotAmplitude={5} />
+              </View>
+            </View>
+          </View>
+
+          <View style={styles.showcaseRow}>
+            <View style={styles.showcaseItem}>
+              <Text style={styles.showcaseLabel}>Pulse</Text>
+              <View style={[styles.bubble, styles.largeBubble]}>
+                <TypingIndicator animationPreset="pulse" dotRadius={8} dotMargin={8} />
+              </View>
+            </View>
+
+            <View style={styles.showcaseItem}>
+              <Text style={styles.showcaseLabel}>Fade</Text>
+              <View style={[styles.bubble, styles.largeBubble]}>
+                <TypingIndicator animationPreset="fade" dotRadius={8} dotMargin={8} />
+              </View>
+            </View>
+          </View>
+        </View>
+      </Section>
+
       <InteractiveSection title="Wave (Default)" animationPreset="wave" />
       <InteractiveSection title="Bounce" animationPreset="bounce" />
       <InteractiveSection title="Pulse" animationPreset="pulse" />
@@ -103,6 +139,7 @@ const styles = StyleSheet.create({
   content: {
     paddingTop: 60,
     paddingHorizontal: 20,
+    paddingBottom: 40,
   },
   title: {
     fontSize: 20,
@@ -132,6 +169,31 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF',
     borderRadius: 12,
     padding: 16,
+  },
+  showcaseGrid: {
+    gap: 30,
+    paddingVertical: 10,
+  },
+  showcaseRow: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    gap: 40,
+  },
+  showcaseItem: {
+    alignItems: 'center',
+    gap: 12,
+  },
+  showcaseLabel: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#333',
+    textTransform: 'capitalize',
+  },
+  largeBubble: {
+    paddingHorizontal: 20,
+    paddingVertical: 12,
+    borderRadius: 24,
+    backgroundColor: '#E8E8E8',
   },
   interactiveContainer: {
     alignItems: 'center',
