@@ -2,7 +2,9 @@
 
 A smooth, customizable, and high-performance typing indicator for React Native chat applications. Built with `react-native-reanimated` for 60fps animations.
 
-![Demo](assets/demo.gif)
+<p align="center">
+  <img src="./assets/demo.gif" alt="Demo" width="100%">
+</p>
 
 ## Installation
 
