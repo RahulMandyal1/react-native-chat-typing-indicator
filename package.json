@@ -63,6 +63,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/RahulMandyal1/react-native-chat-typing-indicator.git"
+    "url": "git+https://github.com/RahulMandyal1/react-native-chat-typing-indicator.git"
   }
 }
