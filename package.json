@@ -1,0 +1,68 @@
+{
+  "name": "react-native-chat-typing-indicator",
+  "version": "0.0.0",
+  "description": "A typing indicator for React Native chat apps with smooth animations",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "react-native": "src/index.ts",
+  "source": "src/index.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check src/",
+    "lint:fix": "biome check --write src/",
+    "format": "biome format --write src/",
+    "prepare": "husky && npm run build",
+    "release": "release-it"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "biome check --write"
+    ]
+  },
+  "keywords": [
+    "react-native",
+    "typing-indicator",
+    "typing-animation",
+    "chat",
+    "animation",
+    "reanimated",
+    "expo",
+    "react-native-bubble-indicator",
+    "react-native-typing-animation",
+    "react-native-typing-dots",
+    "react-native-typing"
+  ],
+  "author": "rahulmandyal1",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-native": ">=0.64.0",
+    "react-native-reanimated": ">=3.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.0",
+    "@commitlint/cli": "^19.0.0",
+    "@commitlint/config-conventional": "^19.0.0",
+    "@release-it/conventional-changelog": "^8.0.0",
+    "@types/node": "^25.1.0",
+    "@types/react": "^18.2.0",
+    "husky": "^9.0.0",
+    "lint-staged": "^15.0.0",
+    "react": "18.3.1",
+    "react-native": "^0.76.0",
+    "react-native-reanimated": "^4.0.0",
+    "release-it": "^17.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RahulMandyal1/react-native-chat-typing-indicator.git"
+  }
+}
