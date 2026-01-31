@@ -1,6 +1,6 @@
 {
   "name": "react-native-chat-typing-indicator",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A typing indicator for React Native chat apps with smooth animations",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
