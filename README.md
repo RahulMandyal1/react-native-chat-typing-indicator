@@ -1,8 +1,8 @@
 # React Native Chat Typing Indicator
 
-![Demo](assets/demo.gif)
-
 A smooth, customizable, and high-performance typing indicator for React Native chat applications. Built with `react-native-reanimated` for 60fps animations.
+
+![Demo](assets/demo.gif)
 
 ## Installation
 
